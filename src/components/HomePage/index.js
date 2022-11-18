@@ -1,11 +1,12 @@
 import React from "react";
+import TopSection from "./TopSection";
 
 const HomePage = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime blanditiis
-      accusamus et officiis laudantium id obcaecati molestias sint, nam omnis.
-    </div>
+    <>
+      <TopSection />
+      <p>Hello World1</p>
+    </>
   );
 };
 
