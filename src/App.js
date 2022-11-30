@@ -2,6 +2,7 @@ import React from "react";
 import HomePage from "./components/HomePage/index.js";
 import AboutPage from "./components/AboutPage/index.js";
 import ContactPage from "./components/ContactPage/index.js";
+import BookingPage from "./components/BookingPage/index.js";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
 import { colors } from "./utils/theme.js";
@@ -9,13 +10,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route
-          path="/home"
+          path="/"
           element={
             <>
-              <Header color={colors.white} /> <HomePage />
+              <Header color={colors.white} />
+              <HomePage />
             </>
           }
         />
@@ -32,8 +34,17 @@ const App = () => {
           path="/contact"
           element={
             <>
-              <Header />
+              <Header color={colors.black} />
               <ContactPage />
+            </>
+          }
+        />
+        <Route
+          path="/booking"
+          element={
+            <>
+              <Header color={colors.white} />
+              <BookingPage />
             </>
           }
         />

@@ -59,7 +59,7 @@ const Header = ({ color = colors.white }) => {
       <BorderBox color={color}>
         <Navbar color={color}>
           <Section color={color}>
-            <Title color={color} href="/home">
+            <Title color={color} href="/">
               Zürich Nägel
             </Title>
           </Section>

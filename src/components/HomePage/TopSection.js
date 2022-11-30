@@ -3,10 +3,8 @@ import styled from "styled-components";
 import bg_video from "../../assets/nails.mp4";
 
 const Container = styled.div`
-  position: relative;
-  top: -141px;
-  height: 100vh;
   width: 100%;
+  height: calc(100vh - 141px);
 `;
 
 const Video = styled.video`
