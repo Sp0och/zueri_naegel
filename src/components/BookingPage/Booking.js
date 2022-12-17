@@ -5,6 +5,7 @@ import Calendar from "react-calendar";
 import { useState } from "react";
 import Calendar2 from "./Calendar";
 import "react-calendar/dist/Calendar.css";
+import "./calendar.css";
 
 const Container = styled.div`
   width: 100%;
